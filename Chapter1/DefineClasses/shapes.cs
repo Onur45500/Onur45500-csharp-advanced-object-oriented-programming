@@ -37,6 +37,11 @@ class Rectangle
         }
     }
 
+    public int BorderSize
+    {
+        get; set;
+    } = 1; // default value
+
     int width;
     int height;
 }
