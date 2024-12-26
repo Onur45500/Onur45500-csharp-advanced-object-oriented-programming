@@ -18,6 +18,25 @@ class Rectangle
         return width * height;
     }
 
-    public int width;
-    public int height;
+    public int Width
+    {
+        get { return width; }
+        set { width = value; }
+    }
+
+    public int Height
+    {
+        get { return Height; }
+        set { 
+            if(value < 0)
+            {
+                throw new ArgumentOutOfRangeException("Height", "must be >= 0");
+            }
+
+            height = value;
+        }
+    }
+
+    int width;
+    int height;
 }
