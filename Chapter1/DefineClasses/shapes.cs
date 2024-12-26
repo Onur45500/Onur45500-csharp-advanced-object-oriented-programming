@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-class Rectangle
+﻿class Rectangle
 {
     public Rectangle (int w, int h)
     {
